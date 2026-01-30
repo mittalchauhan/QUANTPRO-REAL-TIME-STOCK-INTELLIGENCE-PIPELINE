@@ -1,4 +1,4 @@
-# QUANTOS: Real-Time Stock Intelligence Pipeline
+# 🏛️ QUANTOS: Real-Time Stock Intelligence Pipeline
 
 **QUANTOS** is an institutional-grade quantitative trading terminal designed for real-time market analysis, predictive risk modeling, and machine learning model validation. By integrating live data feeds with advanced financial mathematics, the pipeline provides a comprehensive view of equity dynamics and systemic risk.
 
@@ -17,15 +17,15 @@
 
 ### 1. Executive Terminal
 The primary dashboard for monitoring portfolio health and alpha generation.
-![Executive Terminal](assets/executive_terminal.png)
+![Executive Terminal](assets/EXECUTIVE TERMINAL.png)
 
 ### 2. Risk Control Matrix
 Advanced risk parameters and predictive price cones to visualize potential market drawdowns.
-![Risk Control Matrix](assets/risk_matrix.png)
+![Risk Control Matrix](assets/RISK CONTROL MATRIX.png)
 
 ### 3. Quantitative Validation
 A dedicated engine to benchmark predictive accuracy and algorithmic signal propagation.
-![Quantitative Validation](assets/quantitative_validation.png)
+![Quantitative Validation](assets/QUANTITATIVE VALIDATION.png)
 
 ---
 
@@ -67,6 +67,6 @@ The pipeline utilizes several core quantitative methods to process incoming data
 
    ```bash
    python app.py
-   ```
 
-   Access the local server at http://127.0.0.1:5000.
+   # Access the local server at http://127.0.0.1:5000.
+   ```
