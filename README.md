@@ -16,20 +16,20 @@
 ## Terminal Interface
 
 ### 1. Executive Terminal
-The primary dashboard for monitoring portfolio health and alpha generation.
+- The primary dashboard for monitoring portfolio health and alpha generation.
 ---
 ![Executive Terminal](assets/EXECUTIVE_TERMINAL.png)
 --- 
 
 ### 2. Risk Control Matrix
-Advanced risk parameters and predictive price cones to visualize potential market drawdowns.
+- Advanced risk parameters and predictive price cones to visualize potential market drawdowns.
 ---
 ![Risk Control Matrix](assets/RISK_CONTROL_MATRIX.png)
 ---
 
 
 ### 3. Quantitative Validation
-A dedicated engine to benchmark predictive accuracy and algorithmic signal propagation.
+- A dedicated engine to benchmark predictive accuracy and algorithmic signal propagation.
 ---
 ![Quantitative Validation](assets/QUANTITATIVE_VALIDATION.png)
 ---
