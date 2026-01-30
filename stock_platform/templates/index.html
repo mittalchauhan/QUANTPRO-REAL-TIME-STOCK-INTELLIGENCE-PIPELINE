@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuantOS | Institutional Terminal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">QUANT<span>PRO</span></div>
+        <nav>
+            <div class="nav-item active" onclick="tab(event, 'dash')">DASHBOARD</div>
+            <div class="nav-item" onclick="tab(event, 'risk')">RISK INTELLIGENCE</div>
+            <div class="nav-item" onclick="tab(event, 'models')">MODEL BENCHMARK</div>
+        </nav>
+    </div>
+
+    <div class="viewport">
+        <section id="dash" class="page active">
+            <h1 class="page-title">Executive Terminal</h1>
+            <div class="stat-grid-4">
+                <div class="card"><label>TOTAL EQUITY</label><div id="d-pv" class="val">—</div></div>
+                <div class="card"><label>ANNUAL VOL</label><div id="d-vol" class="val">—</div></div>
+                <div class="card"><label>TOTAL RETURN</label><div id="d-ret" class="val" style="color:#0ecb81">—</div></div>
+                <div class="card"><label>SYSTEM ALPHA</label><div class="val" style="color:#0ecb81">+3.15%</div></div>
+            </div>
+            <div class="terminal-container main-graph">
+                <header>Performance Analysis (Real-time Crosshair Active)</header>
+                <div class="canvas-holder"><canvas id="equityChart"></canvas></div>
+            </div>
+            <div class="terminal-container pulse-footer">
+                <header>Sector Exposure & Portfolio Concentration</header>
+                <div class="table-holder"><table id="sectorTable"><thead><tr><th>SECTOR</th><th>WEIGHT</th><th>ALLOCATION STATUS</th></tr></thead><tbody></tbody></table></div>
+            </div>
+        </section>
+
+        <section id="risk" class="page">
+            <h1 class="page-title">Risk Control Matrix</h1>
+            <div class="stat-grid-6">
+                <div class="card"><label>VaR (95%)</label><div id="var" class="val">—</div></div>
+                <div class="card"><label>SHARPE</label><div id="sharpe" class="val">—</div></div>
+                <div class="card"><label>BETA</label><div id="beta" class="val">—</div></div>
+                <div class="card"><label>MDD</label><div id="mdd" class="val">—</div></div>
+                <div class="card"><label>VOLATILITY</label><div id="vol" class="val">—</div></div>
+                <div class="card"><label>LIQUIDITY</label><div class="val">Optimal</div></div>
+            </div>
+            <div class="terminal-container main-graph">
+                <header>Monte Carlo Simulation (Predictive Cone)</header>
+                <div class="canvas-holder"><canvas id="riskChart"></canvas></div>
+            </div>
+        </section>
+
+        <section id="models" class="page">
+            <h1 class="page-title">Model Benchmarking</h1>
+            <div class="dual-layout">
+                <div class="terminal-container">
+                    <header>Predictive Accuracy Matrix</header>
+                    <div class="canvas-holder"><canvas id="modelBarChart"></canvas></div>
+                </div>
+                <div class="terminal-container">
+                    <header>Execution Signals</header>
+                    <div class="table-holder"><table id="suggestTable"><thead><tr><th>ENGINE</th><th>SIGNAL</th></tr></thead><tbody></tbody></table></div>
+                </div>
+            </div>
+            <div class="terminal-container table-footer">
+                <header>Quantitative Model Validation</header>
+                <div class="table-holder"><table id="modelTable"><thead><tr><th>MODEL</th><th>ACCURACY</th><th>DRIFT</th><th>STATUS</th></tr></thead><tbody></tbody></table></div>
+            </div>
+        </section>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
