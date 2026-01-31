@@ -62,7 +62,7 @@ The pipeline utilizes several core quantitative methods to process incoming data
    cd <repo-folder>
    ```
 
-2.  **Install dependencies:**
+2. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
